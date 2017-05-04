@@ -1,0 +1,32 @@
+<!doctype HTML>
+
+<html ng-app="listaDeClientesApp">
+    <head>
+        <title>Lista Json</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script type="text/javascript" src="clientesController.js"></script>
+        <script type="text/javascript" src="clientesService.js"></script>
+
+    </head>
+    <body ng-controller="bodyController">
+        <h1 class="jumbotron"> Lista de Clientes </h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="cliente in clientes">
+                <td>{{cliente.codigo}}</td>
+                <td>{{cliente.nome}}</td>
+                <td>{{cliente.dataNascimento | date: 'yyyy-MM-ddTHH:mm:ss'}}Z</td>
+            </tr>
+        </table>
+    </body>
+</html>
