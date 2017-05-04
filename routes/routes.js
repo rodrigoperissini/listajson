@@ -7,12 +7,12 @@ router.get('/', function(req,res) {
 });
 
 router.get('/random', function(req,res) {
-    
-
 
     function randomDate(start, end) {
         return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
     }
+
+    
 
     var listaDeClientes = [];
 
@@ -25,8 +25,7 @@ router.get('/random', function(req,res) {
                  dataNascimento: randomDate(new Date(1950, 0, 1), new Date())
              });
          }
-       res.json(listaDeClientes);
-       
+        res.json(listaDeClientes);
     }
 )
 

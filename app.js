@@ -7,8 +7,6 @@ var app = express();
 app.set('view engine','html');
 
 app.use(express.static(path.join(__dirname,'/public')));
-app.use(bodyParser.json());
-
 app.use('/clientes', routes);
 
 app.get('/', function(req,res) {

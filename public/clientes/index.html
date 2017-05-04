@@ -10,19 +10,21 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script type="text/javascript" src="clientesController.js"></script>
         <script type="text/javascript" src="clientesService.js"></script>
-
+        <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
     </head>
+
     <body ng-controller="bodyController">
-        <h1 class="jumbotron"> Lista de Clientes </h1>
-        <table class="table table-striped">
+        
+        <h1 class="jumbotron center"> Lista de Clientes </h1>
+        <table class="table table-striped" >
             <thead>
                 <tr>
-                    <th>Codigo</th>
-                    <th>Nome</th>
-                    <th>Data de Nascimento</th>
+                    <th class="center">Código</th>
+                    <th class="center">Nome</th>
+                    <th class="center">Data de Nascimento</th>
                 </tr>
             </thead>
-            <tr ng-repeat="cliente in clientes">
+            <tr class="center" ng-repeat="cliente in clientes">
                 <td>{{cliente.codigo}}</td>
                 <td>{{cliente.nome}}</td>
                 <td>{{cliente.dataNascimento | date: 'yyyy-MM-ddTHH:mm:ss'}}Z</td>
