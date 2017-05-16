@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname,'/public')));
 app.use('/clientes', routes);
 
 app.get('/', function(req,res) {
-    res.send('Pagina em express, acesse /clientes para lista');
+    res.send('batata');
 });
 
 app.listen(3000, function(err){
