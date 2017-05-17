@@ -28,27 +28,11 @@ describe('bodyController tests', function() {
 
 describe('Test factory', function() {
   var listaDeClientesGenerate, $q, $httpBackend;
-  var API = 'http://localhost:3000/clientes/';
-  var RESPONSE_SUCCESS = [
-    {
-      codigo: 1,
-      nome: 'Teste 1',
-      dataNascimento: '1993-05-24T13:55:02'
-    },
-    {
-      codigo: 2,
-      nome: 'Teste 2',
-      dataNascimento: '1993-05-24T13:55:02'
-    }
-  ];
 
-  // Before each test load our api.users module
   beforeEach(angular.mock.module('listaDeClientesService'));
 
-  beforeEach(inject(function(_listaDeClientesGenerate_,_$q_,_$httpBackend_) {
+  beforeEach(inject(function(_listaDeClientesGenerate_) {
     listaDeClientesGenerate = _listaDeClientesGenerate_;
-    $q = _$q_;
-    $httpBackend = _$httpBackend_;
   }));
 
   it('should exist', function() {
@@ -60,3 +44,8 @@ describe('Test factory', function() {
   });
 
 });
+
+
+
+
+
