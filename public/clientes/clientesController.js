@@ -4,6 +4,8 @@ listaDeClientesApp.controller("bodyController", function($scope, $http, listaDeC
 
     listaDeClientesGenerate.getClientes()
     .then(function (data) {
+        console.log(data.data[0].codigo);
         $scope.clientes = data.data;
+        
     })
 })

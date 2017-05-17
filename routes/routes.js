@@ -16,7 +16,7 @@ router.get('/random', function(req,res) {
 
     var listaDeClientes = [];
 
-         for(var i = 0 ; i < 150 ; i++)
+         for(var i = 0 ; i < 2 ; i++)
          {
              
              listaDeClientes.push( {

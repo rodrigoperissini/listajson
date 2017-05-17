@@ -10,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "jasmine": "^2.6.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4"
   }
 }
