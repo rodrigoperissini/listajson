@@ -10,5 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "jsdom": "^10.1.0",
+    "mocha": "^3.4.1",
+    "mocha-jsdom": "^1.1.0"
   }
 }

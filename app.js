@@ -20,5 +20,7 @@ app.listen(3000, function(err){
     console.log(err);
 });
 
+var server = app;
+module.exports = server;
 
 
